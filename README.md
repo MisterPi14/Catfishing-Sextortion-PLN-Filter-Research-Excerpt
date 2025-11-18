@@ -1,61 +1,40 @@
-# Catfishing-Sextortion PLN Filter Research
+# Comprehensive README Documentation
 
 ## Descripción General
-Este proyecto investiga técnicas para prevenir y filtrar interacciones fraudulentas asociadas con el catfishing y la extorsión en línea utilizando modelos de procesamiento de lenguaje natural (PLN).
+En este proyecto, exploramos el uso de Ollama y scikit-learn para abordar el problema de sextorsión en línea. Se proporciona un filtro que permite detectar y clasificar comunicaciones sospechosas relacionadas con este fenómeno.
 
 ## Propósito de la Investigación
-El propósito de esta investigación es desarrollar un filtro efectivo que ayude a identificar y mitigar los riesgos asociados con el catfishing y la sextorsión, a la vez que se brindan herramientas a los usuarios para protegerse contra estos threats.
+El propósito principal de esta investigación es desarrollar un enfoque efectivo para identificar y prevenir casos de sextorsión a través del análisis de datos y aprendizaje automático.
 
 ## Estructura del Repositorio
-El repositorio está estructurado en directorios que incluyen scripts, datasets y documentación necesaria para la ejecución del proyecto.
+El repositorio está estructurado de la siguiente manera:
+- `data/`: Contiene el conjunto de datos de prueba.
+- `notebooks/`: Scripts y notebooks utilizados para la investigación.
+- `src/`: Código fuente y modelos entrenados.
 
 ## Requisitos de Ejecución
-### Ollama
-- [Ollama](https://ollama.com/) permite la ejecución de modelos de PLN previamente entrenados. Se requiere tener la última versión instalada.  
-- Ejemplo de instalación:  
-  ```bash  
-  pip install ollama
-  ``` 
+Para ejecutar este proyecto, se requieren los siguientes componentes:
+- Ollama
+- scikit-learn
 
-### Scikit-learn
-- Se sugiere utilizar `scikit-learn` para la implementación de modelos de machine learning.  
-- Ejemplo de instalación:  
-  ```bash  
-  pip install scikit-learn
-  ```  
-- Detalles técnicos sobre los algoritmos implementados son proporcionados en el directorio de documentación.
-
-## Dataset de Prueba
-El dataset utilizado para la validación del modelo incluye ejemplos de interacciones legítimas y fraudulentas, así como características detalladas que permiten el entrenamiento del modelo.
-
-## Instalación y Configuración
-Para instalar el proyecto, clone el repositorio y siga las instrucciones en el archivo de instalación:
+### Instalación y Configuración
+Para instalar y configurar el entorno, ejecute:
 ```bash
-git clone https://github.com/MisterPi14/Catfishing-Sextortion-PLN-Filter-Research-Excerpt.git
-cd Catfishing-Sextortion-PLN-Filter-Research-Excerpt
+pip install -r requirements.txt
 ```
 
 ## Uso
-Instrucciones para correr el modelo y verificar los resultados.
-
-## Configuración Personalizada
-Se pueden ajustar parámetros en la configuración para adaptar el comportamiento del modelo según las necesidades del usuario.
+Para utilizar el filtro, simplemente invoca el módulo de procesamiento de datos y sigue las instrucciones en el script principal. 
 
 ## Salidas y Resultados
-El modelo generará salidas que indican la probabilidad de que una interacción sea fraudulenta.
+Las salidas del modelo incluyen clasificaciones de alto y bajo riesgo, así como reportes de análisis detallados.
 
 ## Enfoque Metodológico
-La metodología se basa en técnicas de aprendizaje automático y PLN para filtrar interacciones en tiempo real.
-
-## Notas sobre Dataset Sintético
-Se proporcionan detalles sobre cómo se generó un dataset sintético para entrenar el modelo, así como consideraciones éticas y técnicas.
-
-## Limitaciones y Consideraciones
-Se mencionan limitaciones en el modelo y posibles sesgos en los datos utilizados.
+El enfoque metodológico implementa técnicas de aprendizaje automático supervisado, donde se entrena el modelo con un conjunto de datos pre-categorizado.
 
 ## Trabajo Futuro
-1. Optimización de modelos con datos adicionales.
-4. Ampliar el rango de interacciones filtradas.
+Se sugiere investigar la integración de modelos más avanzados y el uso de otros conjuntos de datos para mejorar la precisión del sistema.
 
 ## Referencias Técnicas
-Incluye enlaces y referencias a documentos académicos y técnicas usadas en la investigación.
+- Ollama Documentation
+- scikit-learn Documentation
